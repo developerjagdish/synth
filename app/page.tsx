@@ -186,22 +186,22 @@ export default function Home() {
         </div>
 
         {/* ───────────────────────────── Header ──────────────────────────────── */}
-        <header className="absolute inset-x-0 top-0 z-40 flex items-center justify-between px-8 py-6 lg:px-12">
-          <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Synth logo" width={36} height={36} className="h-9 w-9" />
-            <span className="text-xl font-bold tracking-[0.2em]">SYNTH</span>
+        <header className="absolute inset-x-0 top-0 z-40 flex items-center justify-between px-6 py-5 md:px-8 md:py-6 lg:px-12">
+          <div className="flex items-center gap-2 md:gap-3">
+            <Image src="/logo.png" alt="Synth logo" width={32} height={32} className="h-8 w-8 md:h-9 md:w-9" />
+            <span className="text-lg md:text-xl font-bold tracking-[0.2em]">SYNTH</span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
             <button 
               onClick={() => scrollToSection("work")}
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-neutral-200 cursor-pointer"
+              className="hidden sm:inline-block rounded-full bg-white px-5 py-2.5 md:px-6 md:py-3 text-xs md:text-sm font-semibold tracking-wide text-black transition-colors hover:bg-neutral-200 cursor-pointer"
             >
               EXPLORE SOLUTIONS →
             </button>
             <button 
               onClick={() => setMenuOpen(!menuOpen)}
-              className="flex items-center gap-3 text-sm font-medium tracking-[0.2em] cursor-pointer z-[60] relative"
+              className="flex items-center gap-3 text-xs md:text-sm font-medium tracking-[0.2em] cursor-pointer z-[60] relative"
             >
               <span>{menuOpen ? "CLOSE" : "MENU"}</span>
               <span className="flex flex-col gap-[5px] w-7 justify-center h-4 relative">
@@ -213,7 +213,7 @@ export default function Home() {
         </header>
 
         {/* ──────────────────────────── Left copy ────────────────────────────── */}
-        <div className="absolute left-8 top-[11%] lg:top-[13%] z-30 max-w-[46vw] lg:left-12">
+        <div className="absolute left-6 md:left-8 top-[14%] sm:top-[12%] lg:top-[13%] z-30 max-w-[85vw] md:max-w-[46vw] lg:left-12">
           <div className="font-bold leading-[0.82] tracking-tight">
             <MagneticText
               text="DIGI"
